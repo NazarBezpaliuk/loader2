@@ -1,0 +1,110 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+}
+.hidden-link {
+  position: absolute;
+  top: 55px;
+  background-color: rgb(202, 111, 111);
+  text-align: center;
+  padding: 10px 15px 0 15px;
+  border-radius: 10px;
+  right: -50%;
+  display: none;
+  transition: opacity 3000ms linear;
+  border: 2px solid #000;
+
+  opacity: 0;
+  & li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  & a {
+    color: #000;
+    transition: color 300ms linear;
+
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+}
+.arrow-header {
+  background-color: rgb(202, 111, 111);
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: -7.5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.header-link:hover .hidden-link,
+.header-link:focus .hidden-link {
+  display: flex;
+
+  flex-direction: column;
+  opacity: 1;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+.header-link-list {
+  display: flex;
+}
+.header-logo {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  margin-right: auto;
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+.header-link {
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: color 300ms linear;
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+header {
+  background-color: rgb(121, 121, 121);
+  width: 100%;
+}
