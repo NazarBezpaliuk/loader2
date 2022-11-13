@@ -660,3 +660,87 @@ section {
 }
 
 // --------------------------menu-test-------------------
+.ff {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+
+.dark {
+  background-color: #000;
+}
+.btn {
+  position: absolute;
+  bottom: 0;
+}
+body {
+  transition: background-color 300ms linear;
+}
+
+.wraper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #252525;
+  transition: background-color 400ms linear, opacity 400ms linear;
+  &_lock {
+    background-color: rgb(70, 20, 20);
+  }
+  &_unlock {
+    opacity: 0;
+  }
+}
+.locker_input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  border-radius: 20px;
+  height: 50px;
+  width: 300px;
+  background-color: #4e4e4e;
+  border: 2px solid #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
+  outline: none;
+  &::placeholder {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.481);
+  }
+  transition: border-color 300ms linear;
+  &:hover {
+    border-color: greenyellow;
+  }
+  &_lock {
+    border-color: red;
+  }
+}
+.locker_submit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 120px;
+  background-color: darkgreen;
+  transform: translateX(-50%);
+  border: 2px solid black;
+  outline: none;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+  &:hover {
+    background-color: rgb(2, 149, 2);
+  }
+}

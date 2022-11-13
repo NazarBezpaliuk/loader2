@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./sass/main.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body id="dark" class="fff">
     <main>
       <section class="top-info">
         <!-- <div class="container">
@@ -61,9 +61,24 @@
           </div>
         </div>
       </section>
-
+      <button id="darkbtn" class="btn">dark</button>
       <footer></footer>
+      <div id="wraper" class="wraper">
+        <form class="form">
+          <input
+            id="locker_input"
+            class="locker_input"
+            type="password"
+            placeholder="Password"
+            name="password"
+          />
+          <button id="locker_submit" class="locker_submit" type="button">
+            GO
+          </button>
+        </form>
+      </div>
     </main>
     <script src="./js/script.js"></script>
+    <script src="./js/locker.js"></script>
   </body>
 </html>

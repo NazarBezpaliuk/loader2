@@ -1168,4 +1168,103 @@ section {
   width: 20px;
   background-color: #000;
   border-radius: 50%;
+}
+
+.ff {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.dark {
+  background-color: #000;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  transition: background-color 300ms linear;
+}
+
+.wraper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #252525;
+  transition: background-color 400ms linear, opacity 400ms linear;
+}
+.wraper_lock {
+  background-color: rgb(70, 20, 20);
+}
+.wraper_unlock {
+  opacity: 0;
+}
+
+.locker_input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  border-radius: 20px;
+  height: 50px;
+  width: 300px;
+  background-color: #4e4e4e;
+  border: 2px solid #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
+  outline: none;
+  transition: border-color 300ms linear;
+}
+.locker_input::-moz-placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.481);
+}
+.locker_input:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.481);
+}
+.locker_input::placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.481);
+}
+.locker_input:hover {
+  border-color: greenyellow;
+}
+.locker_input_lock {
+  border-color: red;
+}
+
+.locker_submit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 120px;
+  background-color: darkgreen;
+  transform: translateX(-50%);
+  border: 2px solid black;
+  outline: none;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+}
+.locker_submit:hover {
+  background-color: rgb(2, 149, 2);
 }/*# sourceMappingURL=main.css.map */
